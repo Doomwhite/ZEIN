@@ -91,7 +91,7 @@ Default functions ensure operational correctness while unchecked versions do not
 
 Unchecked versions are provided for api-level optimizations where performance matters.
 
-# Memory Owernship and Viewership
+# Memory Ownership and Viewership
 Currently, tensor permutations only change the indexing of a tensor - they do not
 invalidate underyling memory. If the user chooses to use the TensorFactory,
 it will track allocations and delete them automatically when calling deinit.
